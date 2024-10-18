@@ -1,0 +1,184 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Header styles */
+header {
+    background-color: #ffcccb; /* Peach color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+iframe{
+    border-radius: 20px;
+}
+.service-card h3{
+color:darkslategrey;
+}
+.service-card h3:hover{
+color: rebeccapurple;
+}
+
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    text-align: center;
+    padding: 50px;
+}
+.portfolio h2{
+    color: #9B00FF;
+}
+
+.portfolio-description {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center align */
+}
+
+.service-card {
+    display: flex; /* Display items in a row */
+    background: white; /* White background for cards */
+    border-radius: 10px;
+    width: 80%; /* Full width for responsiveness */
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.service-info {
+    padding: 20px;
+    flex: 1; /* Take remaining space */
+    text-align: left; /* Left align text */
+}
+
+.video-preview {
+    width: 300px; /* Set width for video */
+    height: 200px; /* Set height for video */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Testimonials styles */
+.testimonials {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-card {
+    background: #f1f1f1; /* Light gray background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 80%; /* Width for testimonials */
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffcccb; /* Peach color */
+    color: #333;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap content */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Logo size */
+}
+
+.footer-links, .footer-social, .footer-contact {
+    margin: 10px;
+}
+
+.footer-links h4, .footer-social h4, .footer-contact h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack footer content */
+        align-items: center; /* Center align */
+    }
+
+    .video-preview {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .service-card {
+        flex-direction: column; /* Stack video and info */
+        align-items: center; /* Center align */
+    }
+}
